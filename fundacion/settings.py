@@ -32,10 +32,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-#AUTH_USER_MODEL = "usuarios.Usuario"
+AUTH_USER_MODEL = "usuarios.Usuario"
 
-#LOGIN_URL = "login"
-#LOGIN_REDIRECT_URL = "home"
+LOGIN_URL = "login"
+LOGIN_REDIRECT_URL = "home"
 #LOGOUT_REDIRECT_URL = "home"
 
 
@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'usuarios'
+    'usuarios'
+
     
     
 ]
@@ -93,7 +94,7 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'funda3',
+        'NAME': 'funda4',
 
         'USER': 'postgres',
 
