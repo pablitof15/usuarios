@@ -17,5 +17,5 @@ urlpatterns = [
 
 
         #includes
-    path("usuarios/",include("usuarios.urls"))
+    #path("usuarios/",include("usuarios.urls"))
 ]
