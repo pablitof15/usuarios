@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from usuarios.models import Usuario
 
 
 def inicio(request):
