@@ -11,4 +11,4 @@ class Registro(CreateView):
     template_name = "usuarios/registro.html"
 
     def get_success_url(self, **kwargs):
-        return reverse('home')
+        return reverse('login')

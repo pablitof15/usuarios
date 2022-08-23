@@ -87,7 +87,7 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
             <div class="collapse navbar-collapse" id="navbarCollapse">
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
                   <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+                      <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">Eventos</a>
@@ -99,10 +99,10 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
                       <a class="nav-link active" aria-current="page" href="#">Contacto</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Registro</a>
+                      <a class="nav-link active" aria-current="page" href="{% url 'usuarios:registro' %}">Registro</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="/">Login</a>
+                      <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Login</a>
                     </li>
               </ul>
               <form class="d-flex" role="search">
