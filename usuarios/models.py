@@ -7,6 +7,9 @@ class Usuario(AbstractUser):
     provincia = models.CharField(max_length=255, null=True, blank=True, name="provincia")
     localidad = models.CharField(max_length=255, null=True, blank=True, name="localidad")
     direccion = models.CharField(max_length=255, null=True, blank=True, name="direccion")
+    sexo = models.CharField(max_length=255, null=True, blank=True, name="sexo")
+    dni = models.CharField(max_length=255, null=True, blank=True, name="dni")
+    es_administrador = models.BooleanField(default=False)
     
 
     def __str__(self):
